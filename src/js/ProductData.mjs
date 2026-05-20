@@ -21,3 +21,16 @@ export default class ProductData {
     return products.find((item) => item.Id === id);
   }
 }
+
+init() 
+  // Fetch the product by ID
+  this.product = await this.datasource.findProductById(this.productId);
+
+  // Render it
+  this.renderProductDetails();
+
+  // Add to cart listener
+  document.getElementById('addToCart')
+    .addEventListener('click', this.addProductToCart.bind(this));
+
+
