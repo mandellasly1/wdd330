@@ -1,6 +1,5 @@
 export default class ProductList {
   constructor(category, dataSource, listElement) {
-    // Store the parameters for later use
     this.category = category;
     this.dataSource = dataSource;
     this.listElement = listElement;
@@ -10,9 +9,9 @@ export default class ProductList {
     // Get all products from the data source
     const products = await this.dataSource.getData();
 
-    // Filter products by category
+    // Filter products by category (if your JSON already separates by file, this may be optional)
     const filteredProducts = products.filter(
-      product => product.category === this.category
+      (product) => product.category === this.category
     );
 
     // Render the product list
@@ -24,7 +23,7 @@ export default class ProductList {
     this.listElement.innerHTML = "";
 
     // Loop through products and create cards
-    products.forEach(product => {
+    products.forEach((product) => {
       const card = document.createElement("div");
       card.classList.add("product-card");
 
@@ -33,7 +32,7 @@ export default class ProductList {
         <img src="${product.image}" alt="${product.name}" />
         <p>${product.description}</p>
         <p>Price: $${product.price}</p>
-        <a href="product.html?id=${product.id}">View Details</a>
+        <a href="product.html?product=${product.id}">View Details</a>
       `;
 
       this.listElement.appendChild(card);
