@@ -1,5 +1,5 @@
-import ProductData from "./ProductData.js";
-import ProductDetails from "./ProductDetails.js";
+import ProductData from "./ProductData.mjs";
+import ProductDetails from "./ProductDetails.mjs";
 import ProductList from "./ProductList.mjs";
 
 
@@ -13,6 +13,7 @@ const productId = params.get("880RR");  // e.g. "880RR"
 
 // Create ProductDetails for that product
 if (productId) {
+
   const productDetails = new ProductDetails(productId, dataSource);
   productDetails.init();
 } else {
