@@ -13,9 +13,7 @@ const productId = getParam("product");
 if (productId) {
   const productDetails = new ProductDetails(productId, dataSource);
   productDetails.init();
-} else {
-  console.error("No product ID found in URL");
-}
+} 
 
 // Find the HTML element where the list should go
 const listElement = document.querySelector("#productList");
