@@ -7,13 +7,14 @@ const productId = getParam("product");
 function addProductToCart(product) {
   setLocalStorage("so-cart", product);
 }
-// add to cart button event handler
+
+// Add to cart button event handler
 async function addToCartHandler(e) {
   const product = await dataSource.findProductById(e.target.dataset.id);
   addProductToCart(product);
 }
 
-// add listener to Add to Cart button
+// Add listener to Add to Cart button
 document
   .getElementById("addToCart")
   .addEventListener("click", addToCartHandler);
