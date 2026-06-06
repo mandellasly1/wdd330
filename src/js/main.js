@@ -2,6 +2,16 @@ import { getParam } from "./utils.mjs";
 import ProductData from "./ProductData.mjs";
 import ProductDetails from "./ProductDetails.mjs";
 import ProductList from "./ProductList.mjs";
+import {loadHeaderFooter} from "./utils.mjs";
+
+
+loadHeaderFooter();
+
+const dataSource = new ProductData("tents");
+const element = document.querySelector(".product-list");
+const productList = new ProductList("Tents", dataSource, element);
+
+productList.init();
 
 // Create the data source
 const dataSource = new ProductData("tents");
@@ -21,3 +31,5 @@ const listElement = document.querySelector("#productList");
 // Create ProductList instance for tents category
 const tentList = new ProductList("tents", dataSource, listElement);
 tentList.init();
+
+

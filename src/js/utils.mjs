@@ -27,3 +27,51 @@ export function getParam(param) {
   const query = new URLSearchParams(window.location.search);
   return query.get(param);
 }
+
+
+export async function LoadTemplate(Path) {
+  const res = await fetch(Path);
+  if (res.ok) {
+    return res.text();
+  } else {
+    throw new Error("Bad Response"); 
+  }
+}
+
+
+export function loadHeaderFooter(headerPath, footerPath) {
+  const header = await loadTemplate("../partials/header.html");
+  const footer = await loadTemplate("../partials/footer.html");
+
+  renderWithTemplate(header, document.getElementById("header"));
+  renderWithTemplate(footer, document.getElementById("footer"));
+
+}
+
+
+
+export function renderWithTemplate(templatefn, parentElement, data, callback,) {
+    parentElement.insertAdjacentHTML("afterbegin", template,)
+    if (callback) {
+      callback(data);
+    }
+  }
+
+
+
+/*
+export function renderListWithTemplate(
+  templatefn,
+  parentElement,
+  list,
+  position = "afterBegin",
+  clear = false,
+)
+  {
+    if (clear) {
+      parentElement.innerHTML = "";
+    }
+    const htmlList = list.map(templatefn);
+    parentElement.insertAdjacentHTML(position, htmlList.join(""));
+}
+*/

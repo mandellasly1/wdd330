@@ -1,11 +1,21 @@
-import { getLocalStorage } from "./utils.mjs";
+import { loadHeaderFooter } from "./utils.mjs";
 
+loadHeaderFooter();
+
+const shoppingCart = new ProductDetails(document.querySelector(".product-list"));
+shoppingCart.init();
+
+
+
+/*
 function renderCartContents() {
   const cartItems = getLocalStorage("so-cart");
   const htmlItems = cartItems.map((item) => cartItemTemplate(item));
   document.querySelector(".product-list").innerHTML = htmlItems.join("");
 }
+*/
 
+/*
 function cartItemTemplate(item) {
   const newItem = `<li class="cart-card divider">
   <a href="#" class="cart-card__image">
@@ -24,5 +34,6 @@ function cartItemTemplate(item) {
 
   return newItem;
 }
+*/
 
-renderCartContents();
+
