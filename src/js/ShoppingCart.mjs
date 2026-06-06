@@ -56,6 +56,5 @@ export default class ShoppingCart {
     renderListWithTemplate(this.CardTemplate, this.listElement, cartItems);
 
   }
-
 }
 
