@@ -5,6 +5,7 @@ let timeLeft = 10;
 let intervalId;
 let timeoutId;
 
+
 startButton.addEventListener('click', () => {
   // Reset
   timeLeft = 10;

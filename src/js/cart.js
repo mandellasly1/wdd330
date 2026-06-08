@@ -7,6 +7,7 @@ shoppingCart.init();
 
 
 
+
 /*
 function renderCartContents() {
   const cartItems = getLocalStorage("so-cart");

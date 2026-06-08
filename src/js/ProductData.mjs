@@ -12,6 +12,7 @@ export default class ProductData {
     this.path = "/json/tents.json${this.category}.json";
   }
 
+  
   getData() {
     return fetch(this.path)
       .then(convertToJson)

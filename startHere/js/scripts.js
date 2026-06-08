@@ -19,3 +19,4 @@ document.querySelector("#results").innerHTML =
 "<p> Location: " + myInfo.get("location") + "</p>" +
 "<p> Phone: " + myInfo.get("phone") + "</p>" +
 "<p> Email: " + myInfo.get("email") + "</p>";
+
