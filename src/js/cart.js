@@ -34,6 +34,8 @@ function cartItemTemplate(item) {
 
   return newItem;
 }
+  
 */
+
 
 
