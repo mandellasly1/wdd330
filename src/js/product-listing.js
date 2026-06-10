@@ -23,6 +23,12 @@ const productList = new ProductList (
 
 );
 
+const category = getParam("category");
+const dataSource = new ProductData();
+const element = document.querySelector(".product-list");
+const listing = new ProductList(category, dataSource, element);
+
+
 productList.init();
 
 
