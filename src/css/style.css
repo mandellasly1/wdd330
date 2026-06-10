@@ -275,11 +275,11 @@ button {
   }
 
 
-  #product-category {
+  .product-category {
     text-transform: capitalize;
   }
 
 footer {
   font-size: var(--small-font);
   padding: 1em;
-};
+}

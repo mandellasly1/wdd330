@@ -26,5 +26,3 @@ const productList = new ProductList (
 productList.init();
 
 
-
-i
