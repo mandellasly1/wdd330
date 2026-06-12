@@ -257,7 +257,29 @@ button {
   }
 }
 
+.product-listing > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .product-listing > a img {
+    width: 150px;
+  }
+
+  .product-listing {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+
+
+  #product-category {
+    text-transform: capitalize;
+  }
+
 footer {
   font-size: var(--small-font);
   padding: 1em;
-}
+};
