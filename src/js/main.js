@@ -6,7 +6,7 @@ loadHeaderFooter();
 
 /*
 import { getParam } from "./utils.mjs";
-import ProductData from "./ProductData.mjs";
+import ExternalServices from "./ExternalServices.mjs";
 import ProductDetails from "./ProductDetails.mjs";
 import ProductList from "./ProductList.mjs";
 import {loadHeaderFooter} from "./utils.mjs";
@@ -15,7 +15,7 @@ import {loadHeaderFooter} from "./utils.mjs";
 loadHeaderFooter();
 
 
-const dataSource = new ProductData("tents");
+const dataSource = new ExternalServices("tents");
 const element = document.querySelector(".product-list");
 const productList = new ProductList("Tents", dataSource, element);
 
@@ -23,7 +23,7 @@ productList.init();
 
 
 // Create the data source
-const dataSource = new ProductData("tents");
+const dataSource = new ExternalServices("tents");
 
 // Get productId from the URL query string
 const productId = getParam("product");

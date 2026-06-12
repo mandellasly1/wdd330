@@ -1,4 +1,4 @@
-import ProductData from "./ProductData.mjs";
+import ExternalServices from "./ExternalServices.mjs";
 import ProductDetails from "./ProductDetails.mjs";
 import ProductList from "./ProductList.mjs";
 import {loadHeaderFooter, getParam } from "./utils.mjs";
@@ -14,7 +14,7 @@ document.getElementById("product-category").innerHTML = category.replace (
 );
 
 const category = getParam("category");
-const dataSource = new ProductData();
+const dataSource = new ExternalServices();
 const productList = new ProductList (
 
   "Tents", 
@@ -24,7 +24,7 @@ const productList = new ProductList (
 );
 
 const category = getParam("category");
-const dataSource = new ProductData();
+const dataSource = new ExternalServices();
 const element = document.querySelector(".product-list");
 const listing = new ProductList(category, dataSource, element);
 

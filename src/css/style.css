@@ -279,6 +279,12 @@ button {
     text-transform: capitalize;
   }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}  
+
 footer {
   font-size: var(--small-font);
   padding: 1em;
