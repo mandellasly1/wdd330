@@ -1,34 +1,18 @@
 import ExternalServices from "./ExternalServices.mjs";
 import ProductDetails from "./ProductDetails.mjs";
 import ProductList from "./ProductList.mjs";
-import {loadHeaderFooter, getParam } from "./utils.mjs";
-
+import { loadHeaderFooter, getParam } from "./utils.mjs";
 
 loadHeaderFooter();
 
-document.getElementById("product-category").innerHTML = category.replace (
-  "-",
-   
-  " ", 
+// Get the category from the URL and display it
+const categoryParam = getParam("category");
+document.getElementById("product-category").innerHTML = categoryParam.replace("-", " ");
 
-);
-
-const category = getParam("category");
-const dataSource = new ExternalServices();
-const productList = new ProductList (
-
-  "Tents", 
-  dataSource, 
-  document.querySelector(".product-list"),
-
-);
-
-const category = getParam("category");
-const dataSource = new ExternalServices();
+// Set up services and product list
+const services = new ExternalServices();
 const element = document.querySelector(".product-list");
-const listing = new ProductList(category, dataSource, element);
+const listing = new ProductList(categoryParam, services, element);
 
-
-productList.init();
-
-
+// Initialize the product list
+listing.init();
