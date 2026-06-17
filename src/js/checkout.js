@@ -9,7 +9,7 @@ const dataSource = new ExternalServices();
 const checkoutProcess = new checkoutProcess(dataSource);
 checkoutProcess.displayOrderSummary();
 
-const ShoppingCart = new ShoppingCart (document.querySelector(".product-list"));
+const Cart = new ShoppingCart (document.querySelector(".product-list"));
 ShoppingCart.init();
 
 document.getElementById("checkoutForm").addEventListener("submit", evt => {
