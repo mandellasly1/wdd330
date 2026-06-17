@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill-B5Qt9EMX.js";document.addEventListener("DOMContentLoaded",()=>{document.getElementById("alertBtn").addEventListener("click",()=>{alert("Welcome to Travel Safe Adventure!")})});
