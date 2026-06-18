@@ -5,40 +5,40 @@ loadHeaderFooter();
 
 
 /*
-import { getParam } from "./utils.mjs";
-import ExternalServices from "./ExternalServices.mjs";
-import ProductDetails from "./ProductDetails.mjs";
-import ProductList from "./ProductList.mjs";
-import {loadHeaderFooter} from "./utils.mjs";
+//import { getParam } from "./utils.mjs";
+//import ExternalServices from "./ExternalServices.mjs";
+//import ProductDetails from "./ProductDetails.mjs";
+//import ProductList from "./ProductList.mjs";
+//import {loadHeaderFooter} from "./utils.mjs";
 
 
-loadHeaderFooter();
+//loadHeaderFooter();
 
 
-const dataSource = new ExternalServices("tents");
-const element = document.querySelector(".product-list");
-const productList = new ProductList("Tents", dataSource, element);
+//const dataSource = new ExternalServices("tents");
+//const element = document.querySelector(".product-list");
+//const productList = new ProductList("Tents", dataSource, element);
 
-productList.init();
+//productList.init();
 
 
 // Create the data source
-const dataSource = new ExternalServices("tents");
+//const dataSource = new ExternalServices("tents");
 
 // Get productId from the URL query string
-const productId = getParam("product");
+//const productId = getParam("product");
 
 // Create ProductDetails for that product
-if (productId) {
-  const productDetails = new ProductDetails(productId, dataSource);
-  productDetails.init();
+//if (productId) {
+ // const productDetails = new ProductDetails(productId, dataSource);
+  //productDetails.init();
 }
 
 // Find the HTML element where the list should go
-const listElement = document.querySelector("#productList");
+//const listElement = document.querySelector("#productList");
 
 // Create ProductList instance for tents category
-const tentList = new ProductList("tents", dataSource, listElement);
-tentList.init();
+//const tentList = new ProductList("tents", dataSource, listElement);
+//tentList.init();
 
 */
