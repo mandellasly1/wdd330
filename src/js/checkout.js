@@ -14,7 +14,7 @@ ShoppingCart.init();
 
 document.getElementById("checkoutForm").addEventListener("submit", evt => {
     evt.preventDefault();
-    checkoutProcess.checkout(evt.target)
+    CheckoutProcess.checkout(evt.target)
 
 });
 
