@@ -1,13 +1,13 @@
 import ExternalServices from "./ExternalServices.mjs";
 import ShoppingCart from "./ShoppingCart.mjs";
-import CheckoutProcess from "./CheckoutProcess.mjs";   // <-- matches your file name
+import checkoutProcess from "./CheckoutProcess.mjs";
 import { loadHeaderFooter } from "./utils.mjs";
 
 loadHeaderFooter();
 
 const dataSource = new ExternalServices();
 const checkoutProcess = new CheckoutProcess(dataSource);
-checkoutProcess.displayOrderSummary();   // <-- fixed spelling
+checkoutProcess.displayOrderSummary();
 
 const cart = new ShoppingCart(document.querySelector(".product-list"));
 cart.init();
@@ -16,5 +16,4 @@ document.getElementById("checkoutForm").addEventListener("submit", evt => {
   evt.preventDefault();
   checkoutProcess.checkout(evt.target);
 });
-
 
