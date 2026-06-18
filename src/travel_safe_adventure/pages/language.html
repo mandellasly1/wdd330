@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Helper - Travel Safe Adventure</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    #translationResult {
+      margin-top: 2rem;
+      background: #e0f7fa;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    button {
+      margin: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🗣️ Language Helper</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="currency.html">Currency</a>
+      <a href="map.html">Map</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Type a phrase and select a language to translate:</p>
+    <input type="text" id="phraseInput" placeholder="Enter phrase in English" />
+    <select id="languageSelect"></select>
+    <button id="translateBtn">Translate</button>
+
+    <section id="translationResult"></section>
+    <button id="copyBtn" style="display:none;">Copy Translation</button>
+    <button id="speakBtn" style="display:none;">🔊 Hear Translation</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Travel Safe Adventure</p>
+  </footer>
+
+  <script type="module" src="../js/language.js"></script>
+</body>
+</html>

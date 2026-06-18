@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Map - Travel Safe Adventure</title>
+  <link rel="stylesheet" href="../style.css" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 500px;
+      width: 90%;
+      margin: 2rem auto;
+      border: 2px solid #0077b6;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🗺️ Interactive Map</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="currency.html">Currency</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Explore the world map below. You can zoom and pan to different locations.</p>
+    <div id="map"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Travel Safe Adventure</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script type="module" src="../js/map.js"></script>
+</body>
+</html>
