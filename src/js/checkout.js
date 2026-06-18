@@ -1,11 +1,14 @@
 import ExternalServices from "./ExternalServices.mjs";
 import CheckoutProcess from "./checkoutProcess.mjs";
 import ShoppingCart from "./ShoppingCart.mjs";
+import checkoutProcess from "./CheckoutProcess";
 import { loadHeaderFooter } from "./utils.mjs";
 
 loadHeaderFooter();
 
 const dataSource = new ExternalServices();
+const checkoutProcess = new CheckoutProcess(dataSource);
+checkoutProcess.displayOderSummary();
 const checkoutProcess = new checkoutProcess(dataSource);
 checkoutProcess.displayOrderSummary();
 
@@ -19,6 +22,9 @@ document.getElementById("checkoutForm").addEventListener("submit", evt => {
 });
 
 
+
+/*
+import CheckoutProcess from "./CheckoutProcess.mjs";
 /*
 import ExternalServices from "./ExternalServices.mjs";
 import ShoppingCart from "./ShoppingCart.mjs";
