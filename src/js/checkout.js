@@ -1,4 +1,5 @@
 import ExternalServices from "./ExternalServices.mjs";
+import CheckoutProcess from "./checkoutProcess.mjs";
 import ShoppingCart from "./ShoppingCart.mjs";
 import { loadHeaderFooter } from "./utils.mjs";
 
@@ -15,4 +16,7 @@ document.getElementById("checkoutForm").addEventListener("submit", evt => {
   evt.preventDefault();
   checkoutProcess.checkout(evt.target);
 });
+
+
+
 
