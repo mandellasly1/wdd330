@@ -1,6 +1,5 @@
 import ExternalServices from "./ExternalServices.mjs";
 import ShoppingCart from "./ShoppingCart.mjs";
-import CheckoutProcess from "./CheckoutProcess.mjs";
 import { loadHeaderFooter } from "./utils.mjs";
 
 loadHeaderFooter();
